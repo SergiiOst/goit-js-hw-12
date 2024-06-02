@@ -19,7 +19,7 @@ export function renderImages(images, container) {
   `
     )
     .join('');
-  container.innerHTML = markup;
+  container.insertAdjacentHTML('beforeend', markup);
 
   if (!lightbox) {
     lightbox = new SimpleLightbox('.gallery a');
